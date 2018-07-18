@@ -2,11 +2,11 @@
 
 namespace CSharp
 {
-    class MainClass
+    partial class MainClass
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            AttributeTest();
         }
     }
 }
