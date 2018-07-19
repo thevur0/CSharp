@@ -2,7 +2,7 @@
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
     <ProjectGuid>{EA8F8D62-CE42-4F91-998A-3ADF171E491A}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>CSharp</RootNamespace>
@@ -36,6 +36,24 @@
     <Compile Include="Attribute.cs" />
     <Compile Include="Reflection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VirtualFun.cs" />
+    <Compile Include="Static.cs" />
+    <Compile Include="Sealed.cs" />
+    <Compile Include="OperatorOverride.cs" />
+    <Compile Include="Lambda.cs" />
+    <Compile Include="Interface.cs" />
+    <Compile Include="Indexer.cs" />
+    <Compile Include="HideMember.cs" />
+    <Compile Include="Generic.cs" />
+    <Compile Include="FunParameter.cs" />
+    <Compile Include="FunOverride.cs" />
+    <Compile Include="Exception.cs" />
+    <Compile Include="Event.cs" />
+    <Compile Include="Derived.cs" />
+    <Compile Include="Compare.cs" />
+    <Compile Include="Collection.cs" />
+    <Compile Include="Anonymous.cs" />
+    <Compile Include="Abstract.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

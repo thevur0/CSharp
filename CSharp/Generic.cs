@@ -1,3 +1,6 @@
+using System;
+using System.Collections.Generic;
+using Generic;
 namespace CSharp
 {
     public partial class MainClass 
@@ -36,6 +39,17 @@ namespace CSharp
             {
                 Console.WriteLine("查找1是{0}", sStrOut);
             }
+
+			Action<int,int> action = new Action<int,int>(Tool.Print);
+			action.Invoke(5,2);
+
+			Func<int,int,int> func = delegate (int arg1,int arg2){ return arg1 + arg2; } ;
+			Console.WriteLine(func.Invoke(1 , 2));
+            
+			List<int> list = new List<int>(new int[] { 5, 1, 4, 7, 3 });
+			Predicate<int> predicate = (arg1) => { return arg1 >= 4; };
+			var find = list.FindAll(predicate);
+			find.ForEach((item) => { Console.WriteLine(item); });
         }
     }
 }
@@ -50,6 +64,12 @@ namespace Generic
             a = b;
             b = temp;
         }
+		public static void Print(int a,int b)
+        {
+			Console.WriteLine("a:{0},b:{1}",a,b);
+        }
+
+
     }
 
     class Singleton<T> where T : class,new()
