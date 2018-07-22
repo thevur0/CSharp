@@ -1,12 +1,17 @@
+using System;
+using Abstract;
 namespace CSharp
 {
     public partial class MainClass
     {
-        Animal[] anims = new Animal[] 
-        { new Cat(), new Fish(), new Bird() };
-        foreach (var item in anims)
+        static void AbstractTest()
         {
-            item.Print();   
+            Animal[] anims = new Animal[]
+            { new Cat(), new Fish(), new Bird() };
+            foreach (Animal item in anims)
+            {
+                item.Print();
+            }
         }
     }
 }

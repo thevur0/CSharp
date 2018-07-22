@@ -1,3 +1,6 @@
+using System;
+using System.Collections.Generic;
+using Compare;
 namespace CSharp
 {
     public partial class MainClass

@@ -1,3 +1,5 @@
+using System;
+using FunOverride;
 namespace CSharp
 {
     public partial class MainClass

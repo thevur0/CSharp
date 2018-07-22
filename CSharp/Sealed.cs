@@ -1,3 +1,4 @@
+using System;
 namespace CSharp
 {
     public partial class MainClass
@@ -10,9 +11,9 @@ namespace CSharp
 }
 namespace Sealed
 {
-    class Animal
+    abstract class Animal
     {
-
+        public abstract void Print();
     }
 
     /// <summary>

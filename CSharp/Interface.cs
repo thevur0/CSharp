@@ -1,3 +1,5 @@
+using System;
+using Interface;
 namespace CSharp
 {
     public partial class MainClass

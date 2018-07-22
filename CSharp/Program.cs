@@ -6,7 +6,7 @@ namespace CSharp
     {
         public static void Main(string[] args)
         {
-			AttributeTest();
+			GenericTest();
 			int a = Console.Read();
         }
     }

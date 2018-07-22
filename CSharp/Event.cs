@@ -1,3 +1,5 @@
+using System;
+using Event;
 namespace CSharp
 {
     public partial class MainClass

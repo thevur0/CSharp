@@ -1,3 +1,5 @@
+using System;
+using OperatorOverride;
 namespace CSharp
 {
     public partial class MainClass
@@ -35,6 +37,17 @@ namespace OperatorOverride
                 return true;
             }
             else if (a.Width == b.Height && a.Height == b.Width)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public static bool operator !=(Rect a, Rect b)
+        {
+            if (a.Width != b.Width || a.Height == b.Width)
             {
                 return true;
             }

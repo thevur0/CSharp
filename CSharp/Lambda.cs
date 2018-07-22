@@ -1,3 +1,6 @@
+using System;
+using System.Collections.Generic;
+
 namespace CSharp
 {
     public partial class MainClass

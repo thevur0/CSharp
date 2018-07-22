@@ -1,3 +1,5 @@
+using HideMember;
+using System;
 namespace CSharp
 {
     public partial class MainClass

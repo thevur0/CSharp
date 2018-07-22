@@ -1,3 +1,5 @@
+using System;
+using VirtualFun;
 namespace CSharp
 {
     public partial class MainClass

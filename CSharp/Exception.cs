@@ -1,3 +1,5 @@
+using System;
+using Exception;
 namespace CSharp
 {
     public partial class MainClass
@@ -9,7 +11,7 @@ namespace CSharp
             {
                 dog.Run();
             }
-            catch (Exception e)
+            catch (System.Exception e)
             {
                 Console.WriteLine(e.Message);
             }
@@ -22,6 +24,13 @@ namespace CSharp
 }
 namespace Exception
 {
+    class MyException : System.Exception
+    {
+        public MyException(string str):base(str)
+        {
+
+        }
+    }
     class Dog
     {
         public int Legs { get;private set; } 

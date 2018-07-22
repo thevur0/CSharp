@@ -1,3 +1,4 @@
+using Static;
 namespace CSharp
 {
     public partial class MainClass
