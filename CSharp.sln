@@ -8,17 +8,35 @@ Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
 		Release|x64 = Release|x64
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EA8F8D62-CE42-4F91-998A-3ADF171E491A}.Debug|x64.ActiveCfg = Debug|x64
-		{EA8F8D62-CE42-4F91-998A-3ADF171E491A}.Debug|x64.Build.0 = Debug|x64
-		{EA8F8D62-CE42-4F91-998A-3ADF171E491A}.Release|x64.ActiveCfg = Release|x64
-		{EA8F8D62-CE42-4F91-998A-3ADF171E491A}.Release|x64.Build.0 = Release|x64
+		{EA8F8D62-CE42-4F91-998A-3ADF171E491A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA8F8D62-CE42-4F91-998A-3ADF171E491A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA8F8D62-CE42-4F91-998A-3ADF171E491A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA8F8D62-CE42-4F91-998A-3ADF171E491A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BBDCFEFB-3C88-4235-99B2-E7071FD5CD3E}
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.DotNetNamingPolicy = $1
+		$1.DirectoryNamespaceAssociation = PrefixedHierarchical
+		$0.TextStylePolicy = $2
+		$2.inheritsSet = null
+		$2.scope = text/x-csharp
+		$0.CSharpFormattingPolicy = $3
+		$3.scope = text/x-csharp
+		$0.TextStylePolicy = $4
+		$4.FileWidth = 80
+		$4.TabsToSpaces = True
+		$4.scope = text/plain
+		$0.StandardHeader = $5
+		$0.VersionControlPolicy = $6
 	EndGlobalSection
 EndGlobal
