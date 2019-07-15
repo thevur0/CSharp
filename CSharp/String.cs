@@ -6,15 +6,15 @@ namespace CSharp
         static void StringTest()
         {
             String name = "[小明";
-            //合并字符串
-            name = name + " 20岁";
-            name = name + " 男生]";
+            name = name + " 20岁";//合并字符串
+            name += " 男生]";
             Console.WriteLine(name);//[小明 20岁 男生]    
-            //替换空格为"-"
-            name = name.Replace(' ', '-');
+            name = name.Replace(' ', '-');//替换空格为"-"
             Console.WriteLine(name);//[小明-20岁-男生]
-            Console.WriteLine("[{0} {1}岁 {2}]","小明",20,"男生");
+            Console.WriteLine("{0} 格式化字符串",name);
+            Console.WriteLine($"{name} C#6.0 字符串插值");
 
+            Console.WriteLine();
             System.Text.StringBuilder stringBuilder = new System.Text.StringBuilder();
             for (int i = 0; i < 100; i++)
             {

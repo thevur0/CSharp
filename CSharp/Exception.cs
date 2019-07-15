@@ -28,7 +28,7 @@ namespace Exception
     {
         public MyException(string str):base(str)
         {
-
+            
         }
     }
     class Dog

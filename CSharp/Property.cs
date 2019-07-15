@@ -28,7 +28,7 @@ namespace Property
         //         m_sName = value;
         //     }
         // }
-        public string Name { get; set; }
+        public string Name { get; set; } = "动物";
     }
 
 }

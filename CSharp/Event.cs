@@ -29,6 +29,8 @@ namespace Event
             {
                 RedLightOnEvent.Invoke(this, e);
             }
+
+            RedLightOnEvent?.Invoke(this, e);
         }
     }
 

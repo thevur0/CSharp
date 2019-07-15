@@ -56,6 +56,7 @@ namespace CSharp
 
 namespace Generic
 {
+    using DesignMode;
     class Tool
     {
         public static void Swap<T>(ref T a, ref T b)
@@ -70,20 +71,6 @@ namespace Generic
         }
 
 
-    }
-
-    class Singleton<T> where T : class,new()
-    {
-        static T m_Mgr = null;
-        public static T Instance
-        {
-            get 
-            {
-                if(m_Mgr == null)
-                    m_Mgr = new T();
-                return m_Mgr;
-            }
-        }
     }
 
     class SceneManager : Singleton<SceneManager>

@@ -17,15 +17,7 @@ namespace CSharp
             Console.WriteLine("测试注释");
         }
 
-        /// <summary>
-        /// 命名空间
-        /// </summary>
-        static void NameSpaceTest()
-        {
-            //使用命名空间中的类
-            //可以using namespace System.Collections;
-            System.Collections.ArrayList list = new System.Collections.ArrayList();
-        }
+        
 
         /// <summary>
         /// 变量
@@ -48,6 +40,26 @@ namespace CSharp
             int iValue = (int)obj;
             //拆箱操作
             Console.WriteLine(iValue);
+
+            //类型转换
+
+            int i1 = 10;
+            float f1 = (float)i1;  //整型转浮点型
+
+            float f2 = 2.482f;
+            int i2 = (int)f2;   //浮点型转整型
+
+            int i3 = 35822;         
+            string s1 = i3.ToString();  //整型转字符串
+
+            string s2 = "532.2325";
+            float f3 = float.Parse(s2);  //字符串转浮点型
+
+            string s3 = "8848.13";
+            float.TryParse(s3,out float f4);
+
+            Console.WriteLine(f4);
+
         }
         
 

@@ -1,14 +1,23 @@
+using System;
 using Static;
+
 namespace CSharp
 {
+    using static Tool;
     public partial class MainClass
     {
         static void StaticTest()
         {
             float r = 2.4f;
-            float fArea = Tool.CalcArea(r);
+            float fArea = CalcArea(r);
         }
     }
+    //static void StaticTest()
+    //{
+    //    float r = 2.4f;
+    //    float fArea = Tool.CalcArea(r);
+    //}
+
 }
 
 namespace Static
