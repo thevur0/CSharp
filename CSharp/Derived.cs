@@ -26,4 +26,22 @@ namespace Derived
             Name = sName;
         }
     }
+
+
+    class BaseClass
+    {
+        public virtual void Print()
+        {
+            Console.WriteLine("BaseClass.Print");
+        }
+    }
+
+    class DerivedClass: BaseClass
+    {
+        public override void Print()
+        {
+            Console.WriteLine("DerivedClass.Print");
+        }
+    }
+
 }
