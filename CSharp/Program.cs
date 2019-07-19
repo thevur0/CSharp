@@ -6,7 +6,7 @@ namespace CSharp
     {
         public static void Main(string[] args)
         {
-            ContravariantAndCovariant();
+            LinqTest();
 			int a = Console.Read();
         }
     }

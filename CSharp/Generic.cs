@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using Generic;
 using Derived;
+using System.Linq;
 namespace CSharp
 {
     public partial class MainClass 
@@ -27,8 +28,12 @@ namespace CSharp
             List<int> listB = new List<int>(array);
             listA.AddRange(listB); //添加list 1,4,7,3
             foreach (int i in listA)
-                Console.WriteLine($"{i} ");
+                Console.Write($"{i} ");
             Console.WriteLine();
+
+            var search = listA.Where<int>(item => { return item>3?true:false; });
+            Console.WriteLine($"大于3：{ Tool.ToString(search.Select<int,string>((item)=> { return item.ToString(); }))}");
+
 
             Dictionary<int, string> dic = new Dictionary<int, string>();
             dic[0] = "输球"; //支持索引器
@@ -73,7 +78,7 @@ namespace CSharp
 namespace Generic
 {
     using DesignMode;
-    class Tool
+    static class Tool
     {
         public static void Swap<T>(ref T a, ref T b)
         {
@@ -85,6 +90,28 @@ namespace Generic
         {
             Console.WriteLine("a:{0},b:{1}", a, b);
         }
+
+        public static string ToString<T>(IEnumerable<T> items)
+        {
+            string s = string.Empty;
+            foreach (var item in items)
+            {
+                s += item.ToString();
+                s += " ";
+            }
+            return s;
+        }
+
+        //public static string ToString<T>(this IEnumerable<T> list)
+        //{
+        //    string s = string.Empty;
+        //    foreach (var item in list)
+        //    {
+        //        s += item.ToString();
+        //        s += " ";
+        //    }
+        //    return s;
+        //}
     }
     
     class SceneManager : Singleton<SceneManager>
