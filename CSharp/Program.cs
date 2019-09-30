@@ -6,7 +6,8 @@ namespace CSharp
     {
         public static void Main(string[] args)
         {
-            LinqTest();
+
+            ArrayTest();
 			int a = Console.Read();
         }
     }
